@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson10</title>
+</head>
+<body>
+<script>
+						 /*Задание 1*/
+	const sum = function () {
+	let result = 0;
+	return number => result+=number;
+	}
+let resultSum = sum();
+console.log(resultSum(3));
+console.log(resultSum(5));
+console.log(resultSum(20));
+console.log(resultSum(30));
+					
+
+
+						 /*Задание 2*/
+	function counter (start ,step ){
+		let count = start;
+		return  reset => reset ? count = start : count += step;
+		}
+	
+	let resultCounter = counter(2,5);
+	console.log(resultCounter());
+	console.log(resultCounter());
+	console.log(resultCounter());
+	resultCounter(true);
+	console.log(resultCounter());
+
+</script>
+</body>
+</html>
